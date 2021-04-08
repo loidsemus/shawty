@@ -11,7 +11,7 @@
 </template>
 
 <script>
-const BitlyShortener = require("../shorteners/bitly_shortener");
+const { Shortener } = require("../shorteners/shortener");
 
 export default {
   name: "InputArea",
@@ -32,7 +32,7 @@ export default {
       }
       this.loading = true;
 
-      new BitlyShortener("cf363b95ad83cc61b6f726dea8773ef0d2ae01ad")
+      new Shortener("bitly")
         .shorten(this.link)
         .then((shortenedLink) => {
           this.loading = false;
