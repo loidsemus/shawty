@@ -65,7 +65,7 @@ h2 {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: all 250ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .fade-enter,
 .fade-leave-active {

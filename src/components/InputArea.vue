@@ -3,7 +3,7 @@
     <input
       v-model="link"
       v-bind:class="{ invalid: invalid }"
-      v-bind:placeholder="invalid ? 'That\'s no link' : 'Link to shorten'"
+      v-bind:placeholder="invalid ? 'That\'s no link' : 'http(s)://example.com'"
       v-on:keydown="invalid = false"
     />
     <button :disabled="loading" v-on:click="shorten">Shorten</button>

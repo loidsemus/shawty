@@ -1,7 +1,7 @@
 <template>
   <div style="display: inline-block">
     <a :href="shortenedLink">{{ shortenedLink }}</a>
-    <button v-on:click="reset">Go again</button>
+    <button v-on:click="reset">Reset</button>
   </div>
 </template>
 
